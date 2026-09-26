@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+    <linearGradient id="bbGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="#0f172a" stroke="url(#bbGold)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  
+  <path id="bbTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+  <path id="bbBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+  
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="10.5" font-weight="800" fill="#fed7aa" letter-spacing="1.5">
+    <textPath href="#bbTop" startOffset="50%" text-anchor="middle">DEAGLES BASKETBALL CLUB</textPath>
+  </text>
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1.2">
+    <textPath href="#bbBottom" startOffset="50%" text-anchor="middle">BULLETS PBC • EST. 2017 • BÓNG RỔ</textPath>
+  </text>
+  
+  <!-- Central Emblem: Basketball with Eagle Wings -->
+  <g transform="translate(100, 98) scale(0.95)">
+    <!-- Eagle Wings Left -->
+    <path d="M -16,-2 C -32,-16 -46,-10 -42,10 C -36,8 -28,8 -20,4 Z" fill="url(#bbGold)"/>
+    <!-- Eagle Wings Right -->
+    <path d="M 16,-2 C 32,-16 46,-10 42,10 C 36,8 28,8 20,4 Z" fill="url(#bbGold)"/>
+    
+    <!-- Basketball Center -->
+    <circle cx="0" cy="0" r="22" fill="url(#bbGrad)" stroke="#ffffff" stroke-width="2"/>
+    <!-- Basketball Lines -->
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#0f172a" stroke-width="2"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#0f172a" stroke-width="2"/>
+    <path d="M -15,-15 C -6,-8 -6,8 -15,15" fill="none" stroke="#0f172a" stroke-width="1.8"/>
+    <path d="M 15,-15 C 6,-8 6,8 15,15" fill="none" stroke="#0f172a" stroke-width="1.8"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="goldMedal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgGold)"/>
+  <circle cx="480" cy="180" r="130" fill="#a855f7" opacity="0.12"/>
+  <circle cx="100" cy="80" r="80" fill="#eab308" opacity="0.1"/>
+  
+  <!-- Ribbon Tag -->
+  <rect x="40" y="36" width="230" height="34" rx="17" fill="#8b5cf6"/>
+  <text x="155" y="58" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">ĐẤU TRƯỜNG QUỐC TẾ</text>
+
+  <!-- Title -->
+  <text x="40" y="115" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">CƠN MƯA HUY CHƯƠNG VÀNG</text>
+  <text x="40" y="145" fill="url(#goldMedal)" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">OLYMPIC QUỐC TẾ &amp; CHÂU Á</text>
+
+  <!-- Medals Showcase Cards -->
+  <rect x="40" y="175" width="160" height="135" rx="12" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+  <circle cx="120" cy="215" r="22" fill="url(#goldMedal)"/>
+  <text x="120" y="222" fill="#78350f" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" text-anchor="middle">IMO</text>
+  <text x="120" y="260" fill="#fef08a" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle">HCV TOÁN HỌC</text>
+  <text x="120" y="285" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Võ Trọng Khải (12A1)</text>
+
+  <rect x="220" y="175" width="160" height="135" rx="12" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+  <circle cx="300" cy="215" r="22" fill="url(#goldMedal)"/>
+  <text x="300" y="222" fill="#78350f" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" text-anchor="middle">IPhO</text>
+  <text x="300" y="260" fill="#fef08a" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle">HCV VẬT LÝ</text>
+  <text x="300" y="285" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Nguyễn Thế Quân (12A)</text>
+
+  <rect x="400" y="175" width="160" height="135" rx="12" fill="rgba(255, 255, 255, 0.07)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+  <circle cx="480" cy="215" r="22" fill="url(#goldMedal)"/>
+  <text x="480" y="222" fill="#78350f" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" text-anchor="middle">IMChO</text>
+  <text x="480" y="260" fill="#fef08a" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" text-anchor="middle">HCV HÓA HỌC</text>
+  <text x="480" y="285" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Nguyễn Ngô Đức (12A4)</text>
+
+  <text x="40" y="340" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">Vinh quang xứ Nghệ • Tự hào trí tuệ Việt Nam trên trường quốc tế</text>
+</svg>

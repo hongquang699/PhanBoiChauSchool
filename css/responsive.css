@@ -1,0 +1,293 @@
+/* ==========================================================================
+   WEBSITE THPT CHUYÊN PHAN BỘI CHÂU - NGHỆ AN
+   Responsive Stylesheet (Mobile, Tablet, Desktop)
+   ========================================================================== */
+
+/* ==========================================================================
+   1. LAPTOP & SMALL DESKTOP (max-width: 1200px)
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .nav-link {
+    padding: 8px 8px;
+    font-size: 0.85rem;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .news-grid, .doc-grid, .club-grid, .gallery-grid {
+    gap: 20px;
+  }
+}
+
+/* ==========================================================================
+   2. TABLET LANDSCAPE & PORTRAIT (max-width: 992px)
+   ========================================================================== */
+@media (max-width: 992px) {
+  .top-bar {
+    display: none; /* Hide topbar on mobile/tablet for compactness */
+  }
+
+  .header-inner {
+    padding: 10px 0;
+    min-height: 70px;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 300px;
+    height: calc(100vh - 70px);
+    background: var(--bg-white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    margin-top: 0;
+    border-top: none;
+    overflow-y: auto;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s ease-in-out;
+    z-index: 1050;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 6px;
+    font-size: 0.95rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-top: none;
+    padding: 0 0 10px 16px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    background: #f8fafc;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-item.dropdown-open .dropdown-menu {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-preview-image-wrap img {
+    height: 320px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-banner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activity-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subject-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teacher-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admission-steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE PHONES (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .header-contact-quick {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .about-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-banner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .club-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Single-sided Timeline on Mobile */
+  .timeline-container::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item.left, .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left .timeline-dot, .timeline-item.right .timeline-dot {
+    left: 10px;
+    right: auto;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .brand-sub {
+    font-size: 0.68rem;
+  }
+
+  .brand-motto {
+    display: none;
+  }
+
+  .brand-logo img {
+    height: 44px;
+  }
+
+  .feature-video-body {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-video-actions {
+    width: 100%;
+  }
+
+  .feature-video-actions .btn {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   4. SMALL MOBILE (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .btn-admissions-nav {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .filter-tab-bar {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+}

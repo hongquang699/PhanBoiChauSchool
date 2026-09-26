@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tntnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="url(#tntnGrad)" stroke="#ef4444" stroke-width="4"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  
+  <path id="tntnTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+  <path id="tntnBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+  
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="10" font-weight="800" fill="#fecaca" letter-spacing="1.5">
+    <textPath href="#tntnTop" startOffset="50%" text-anchor="middle">ĐỘI THANH NIÊN TÌNH NGUYỆN</textPath>
+  </text>
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1.2">
+    <textPath href="#tntnBottom" startOffset="50%" text-anchor="middle">CHUYÊN PHAN BỘI CHÂU • EST. 2010</textPath>
+  </text>
+  
+  <!-- Central Emblem: Caring Hands & Heart with Vietnam Youth Star -->
+  <g transform="translate(100, 98) scale(0.95)">
+    <!-- Heart in Center -->
+    <path d="M 0,-8 C -14,-24 -36,-10 -24,8 C -16,18 0,28 0,28 C 0,28 16,18 24,8 C 36,-10 14,-24 0,-8 Z" fill="url(#heartGrad)"/>
+    
+    <!-- Youth Star in Heart -->
+    <polygon points="0,-6 2.5,-1 8,-1 3.5,2 5.5,7 0,4 -5.5,7 -3.5,2 -8,-1 -2.5,-1" fill="#fef08a"/>
+    
+    <!-- Caring Hands from Left & Right -->
+    <path d="M -34,18 C -26,10 -16,14 -8,22 L -14,28 C -22,26 -28,24 -34,18 Z" fill="#ffffff"/>
+    <path d="M 34,18 C 26,10 16,14 8,22 L 14,28 C 22,26 28,24 34,18 Z" fill="#ffffff"/>
+  </g>
+</svg>

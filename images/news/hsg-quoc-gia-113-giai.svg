@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b3c68"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="gradGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#gradBg)"/>
+  <circle cx="530" cy="70" r="140" fill="#3b82f6" opacity="0.15"/>
+  <circle cx="80" cy="300" r="100" fill="#f59e0b" opacity="0.12"/>
+  <g fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.2">
+    <polygon points="50,40 70,80 30,80"/>
+    <circle cx="520" cy="280" r="25"/>
+    <rect x="440" y="40" width="40" height="40" rx="6"/>
+  </g>
+  
+  <!-- Banner Title Tag -->
+  <rect x="40" y="36" width="220" height="34" rx="17" fill="url(#badgeGrad)"/>
+  <text x="150" y="58" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">KỶ LỤC LỊCH SỬ DẪN ĐẦU</text>
+
+  <!-- Big Numbers -->
+  <text x="40" y="165" fill="url(#gradGold)" font-family="'Segoe UI', Roboto, sans-serif" font-size="92" font-weight="900" letter-spacing="-2">113</text>
+  <text x="210" y="130" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">GIẢI QUỐC GIA</text>
+  <text x="212" y="160" fill="#93c5fd" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600">KỲ THI CHỌN HSG QUỐC GIA NĂM HỌC 2025 - 2026</text>
+
+  <!-- Details Bar -->
+  <rect x="40" y="205" width="520" height="95" rx="12" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+  
+  <g transform="translate(60, 230)">
+    <text x="40" y="28" fill="#f59e0b" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">10</text>
+    <text x="40" y="50" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">GIẢI NHẤT</text>
+    <line x1="105" y1="10" x2="105" y2="55" stroke="rgba(255,255,255,0.2)"/>
+
+    <text x="150" y="28" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">40</text>
+    <text x="150" y="50" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">GIẢI NHÌ</text>
+    <line x1="215" y1="10" x2="215" y2="55" stroke="rgba(255,255,255,0.2)"/>
+
+    <text x="260" y="28" fill="#93c5fd" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">31</text>
+    <text x="260" y="50" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">GIẢI BA</text>
+    <line x1="325" y1="10" x2="325" y2="55" stroke="rgba(255,255,255,0.2)"/>
+
+    <text x="370" y="28" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">32</text>
+    <text x="370" y="50" fill="#e2e8f0" font-family="'Segoe UI', Roboto, sans-serif" font-size="12">GIẢI KHUYẾN KHÍCH</text>
+  </g>
+
+  <text x="40" y="335" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Trường THPT Chuyên Phan Bội Châu • Vị thế trường chuyên hàng đầu Việt Nam</text>
+</svg>

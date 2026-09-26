@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pdcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="goldPdc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="url(#pdcGrad)" stroke="url(#goldPdc)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  
+  <path id="pdcTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+  <path id="pdcBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+  
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="11" font-weight="800" fill="#fef08a" letter-spacing="1.5">
+    <textPath href="#pdcTop" startOffset="50%" text-anchor="middle">PHAN DEBATE CLUB</textPath>
+  </text>
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="1.2">
+    <textPath href="#pdcBottom" startOffset="50%" text-anchor="middle">PDC • EST. 2016 • CRITICAL MIND</textPath>
+  </text>
+  
+  <!-- Central Emblem: Microphone & Scales of Balance -->
+  <g transform="translate(100, 98) scale(0.9)">
+    <!-- Scales beam -->
+    <path d="M -40,-10 L 40,-10" stroke="url(#goldPdc)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="-10" r="5" fill="#fef08a"/>
+    <path d="M 0,-10 L 0,28" stroke="url(#goldPdc)" stroke-width="3.5"/>
+    <path d="M -24,28 L 24,28" stroke="url(#goldPdc)" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Left Pan -->
+    <path d="M -40,-10 L -50,6 L -30,6 Z" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <path d="M -54,6 C -54,14 -26,14 -26,6 Z" fill="url(#goldPdc)"/>
+    
+    <!-- Right Pan -->
+    <path d="M 40,-10 L 30,6 L 50,6 Z" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <path d="M 26,6 C 26,14 54,14 54,6 Z" fill="url(#goldPdc)"/>
+    
+    <!-- Vintage Podium Microphone Center -->
+    <rect x="-8" y="-35" width="16" height="24" rx="8" fill="#ffffff" stroke="#991b1b" stroke-width="2"/>
+    <line x1="-5" y1="-27" x2="5" y2="-27" stroke="#991b1b" stroke-width="1.5"/>
+    <line x1="-5" y1="-23" x2="5" y2="-23" stroke="#991b1b" stroke-width="1.5"/>
+    <line x1="-5" y1="-19" x2="5" y2="-19" stroke="#991b1b" stroke-width="1.5"/>
+    <path d="M -12,-25 C -12,-11 12,-11 12,-25" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  </g>
+</svg>

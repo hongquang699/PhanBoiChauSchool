@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pacGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="pacWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="url(#pacGrad)" stroke="url(#pacWood)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+  
+  <path id="pacTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+  <path id="pacBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+  
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="10.5" font-weight="800" fill="#fde68a" letter-spacing="1.5">
+    <textPath href="#pacTop" startOffset="50%" text-anchor="middle">PHAN ACOUSTIC CLUB</textPath>
+  </text>
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="1.2">
+    <textPath href="#pacBottom" startOffset="50%" text-anchor="middle">PAC • EST. 2015 • ÂM NHẠC TRƯỜNG PHAN</textPath>
+  </text>
+  
+  <!-- Central Emblem: Acoustic Guitar & Flying Musical Notes -->
+  <g transform="translate(100, 100) scale(0.95)">
+    <!-- Guitar Body -->
+    <path d="M -8,22 C -24,28 -34,14 -28,-2 C -22,-14 -10,-12 -6,-16 L -4,-38 L 4,-38 L 6,-16 C 10,-12 22,-14 28,-2 C 34,14 24,28 8,22 Z" fill="url(#pacWood)"/>
+    <!-- Sound hole -->
+    <circle cx="0" cy="3" r="7" fill="#451a03"/>
+    <circle cx="0" cy="3" r="8.5" fill="none" stroke="#fef3c7" stroke-width="1.2"/>
+    <!-- Bridge -->
+    <rect x="-7" y="16" width="14" height="3" rx="1" fill="#451a03"/>
+    <!-- Headstock & Strings -->
+    <rect x="-3" y="-45" width="6" height="8" rx="1.5" fill="#78350f"/>
+    <line x1="0" y1="-38" x2="0" y2="16" stroke="#ffffff" stroke-width="1.2" opacity="0.8"/>
+    
+    <!-- Musical Notes floating -->
+    <path d="M -30,-22 C -30,-26 -25,-28 -22,-26 L -22,-16 C -24,-16 -27,-15 -27,-13 C -27,-11 -25,-10 -23,-10 C -20,-10 -19,-12 -19,-14 L -19,-28 C -19,-30 -26,-30 -30,-26 Z" fill="#fde68a"/>
+    <path d="M 22,-24 C 22,-28 27,-30 30,-28 L 30,-18 C 28,-18 25,-17 25,-15 C 25,-13 27,-12 29,-12 C 32,-12 33,-14 33,-16 L 33,-30 C 33,-32 26,-32 22,-24 Z" fill="#ffffff"/>
+  </g>
+</svg>

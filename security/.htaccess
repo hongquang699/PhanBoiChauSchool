@@ -1,0 +1,69 @@
+# ==============================================================================
+# CẤU HÌNH BẢO MẬT MÁY CHỦ APACHE (.htaccess) CHO THPT CHUYÊN PHAN BỘI CHÂU
+# ==============================================================================
+
+# 1. BẢO VỆ DANH MỤC THƯ MỤC (Ngăn duyệt danh sách file trái phép)
+Options -Indexes -MultiViews
+
+# Tắt thông tin phiên bản máy chủ
+ServerSignature Off
+
+# 2. CHUYỂN HƯỚNG TẤT CẢ TRUY CẬP SANG HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Chuyển hướng sang HTTPS nếu chưa bật SSL
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Chặn truy cập vào các file cấu hình và file ẩn nhạy cảm (.git, .env, .sql, .bak)
+    RewriteRule ^\.(.*)$ - [F,L]
+    RewriteCond %{REQUEST_URI} \.(env|git|sql|bak|conf|yml|ini|log|sh)$ [NC]
+    RewriteRule ^(.*)$ - [F,L]
+
+    # Chặn các chuỗi khai thác SQL Injection phổ biến trong URI
+    RewriteCond %{QUERY_STRING} (concat|union|select|insert|cast|set|declare|drop|md5|benchmark) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+
+    # Chặn các chuỗi tấn công Cross-Site Scripting (XSS)
+    RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+    RewriteCond %{QUERY_STRING} (javascript:|eval\(|alert\() [NC]
+    RewriteRule ^(.*)$ - [F,L]
+
+    # Chặn tấn công Path Traversal / LFI
+    RewriteCond %{QUERY_STRING} (\.\./|\.\.\\) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# 3. SECURITY HEADERS (Áp dụng tiêu chuẩn an ninh HTTP)
+<IfModule mod_headers.c>
+    # Buộc dùng HTTPS (HSTS)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Chống Clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Chống rò rỉ MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Bảo vệ XSS trình duyệt
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Kiểm soát rò rỉ Referrer
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Quyền truy cập API phần cứng
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Content Security Policy (CSP)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; media-src 'self' blob:; frame-src 'self' https://www.youtube.com;"
+</IfModule>
+
+# 4. CHẶN THỰC THI SCRIPT TRONG THƯ MỤC UPLOADS VÀ MEDIA
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|cgi|pl|exe|sh|py|asp|aspx|jsp)$">
+    <If "%{REQUEST_URI} =~ m#/(images|videos|uploads)/#">
+        Order Allow,Deny
+        Deny from all
+    </If>
+</FilesMatch>

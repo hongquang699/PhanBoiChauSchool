@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+
+# Backups and logs
+backups/*
+!backups/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
+
+# Editor / OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

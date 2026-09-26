@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgKorean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgKorean)"/>
+  <circle cx="520" cy="80" r="120" fill="#10b981" opacity="0.15"/>
+  <circle cx="100" cy="280" r="90" fill="#34d399" opacity="0.1"/>
+
+  <!-- Badge -->
+  <rect x="40" y="36" width="220" height="34" rx="17" fill="#059669"/>
+  <text x="150" y="58" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1">ĐỔI MỚI ĐÀO TẠO</text>
+
+  <!-- Main Title -->
+  <text x="40" y="125" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">LẦN ĐẦU TIÊN MỞ LỚP</text>
+  <text x="40" y="165" fill="#a7f3d0" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900">CHUYÊN TIẾNG HÀN</text>
+  <text x="40" y="200" fill="#ecfdf5" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600">&amp; NÂNG CẤP HỆ THỐNG 2 LỚP CHUYÊN TOÁN (TOÁN 1 &amp; TOÁN 2)</text>
+
+  <!-- Description Box -->
+  <rect x="40" y="225" width="520" height="75" rx="12" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+  <text x="60" y="255" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">✓ Đón đầu làn sóng hội nhập quốc tế và cơ hội du học, học bổng toàn cầu</text>
+  <text x="60" y="280" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">✓ Nâng tầm đào tạo chất lượng mũi nhọn của trường THPT Chuyên hàng đầu</text>
+
+  <text x="40" y="335" fill="#a7f3d0" font-family="'Segoe UI', Roboto, sans-serif" font-size="13">Trường THPT Chuyên Phan Bội Châu • Khẳng định thương hiệu tiên phong</text>
+</svg>

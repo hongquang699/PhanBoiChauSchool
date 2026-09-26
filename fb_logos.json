@@ -1,0 +1,52 @@
+{
+  "cp_the_news": {
+    "url": "https://www.facebook.com/cpthenews",
+    "title": "CP The News - Nội san Trường THPT chuyên Phan Bội Châu | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063906643811"
+  },
+  "phan_debate_club": {
+    "url": "https://www.facebook.com/PhanDebateClub",
+    "title": "Phan Debate Club - PDC | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064847344126"
+  },
+  "phan_acoustic_club": {
+    "url": "https://www.facebook.com/phanacoustica",
+    "title": "Phan Acoustic Club - PAC | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063667863672"
+  },
+  "phan_bookaholic_club": {
+    "url": "https://www.facebook.com/phanbookaholicclub",
+    "title": "Phan Bookaholic Club - PBC | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100077254366441"
+  },
+  "phan_chess_academy": {
+    "url": "https://www.facebook.com/phanchessacdemy",
+    "title": "Phan Chess Academy - PCA | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064276234742"
+  },
+  "phan_photography_squad": {
+    "url": "https://www.facebook.com/Phanphotographysquad",
+    "title": "Phan Photography Squad - PPS",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064562837989"
+  },
+  "phan_mun": {
+    "url": "https://www.facebook.com/pmu.phanboichau",
+    "title": "Phan Boi Chau Model United Nations Union - PMU",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064622235133"
+  },
+  "phan_design_fashion": {
+    "url": "https://www.facebook.com/phandesignandfashion",
+    "title": "Phan Design&amp;Fashion Club | Vinh ",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064372015040"
+  },
+  "hstp_dance_club": {
+    "url": "https://www.facebook.com/hstpdanceclub",
+    "title": "HSTP Dance Club - PBC",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100069596176117"
+  },
+  "hstp_dance_club_2": {
+    "url": "https://www.facebook.com/hstp.danceclub",
+    "title": "HSTP Dance Club - PBC",
+    "img": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100069596176117"
+  }
+}
